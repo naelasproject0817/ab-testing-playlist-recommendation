@@ -6,9 +6,15 @@ Proyek ini bertujuan untuk menguji efektivitas intervensi kampanye personalisasi
 ---
 
 ## 🎯 Business Problem & Context
-* **Latar Belakang**: Pengguna aktif pada jam istirahat malam (pukul 20:00) cenderung mengalami *decision fatigue* (kebingungan memilih lagu/playlist). Hal ini menyebabkan waktu dengar pengguna stagnan di rata-rata **120 menit/hari** dan menurunkan minat untuk beralih ke akun berbayar.
-* **Solusi**: Memberikan intervensi berupa *push notification* dan kurasi khusus rekomendasi playlist jam 8 malam.
+**Latar Belakang**:
+* **Duration Played**: Distribusi waktu dengar pengguna pada kondisi eksisting tertahan di rata-rata 120 menit. Terdapat indikasi batas jenuh (ceiling effect) yang menghentikan pengguna untuk mendengarkan lagu lebih lama.
+* **Engagement Rate**: Tingkat keaktifan pengguna tertahan di kuadran tengah dengan skor ~0.60. Masih sangat sedikit pengguna yang mencapai kategori high engagement & high duration.
+* **Conversion Rate**: Proporsi pembayaran (payment) pengguna akun Free berada di angka ~69.9%, menandakan masih ada potensi growth untuk mendorong pengguna melakukan transaksi/upgrade.
+* **Pengguna aktif** pada jam istirahat malam (pukul 20:00) cenderung mengalami *decision fatigue* (kebingungan memilih lagu/playlist). Hal ini menyebabkan waktu dengar pengguna stagnan di rata-rata **120 menit/hari** dan menurunkan minat untuk beralih ke akun berbayar.
+**Solusi**: Memberikan intervensi berupa *push notification* dan kurasi khusus rekomendasi playlist jam 8 malam.
 
+![Gambar 1](https://github.com/naelasproject0817/ab-testing-playlist-recommendation/blob/main/1.png)
+![Gambar 2](https://github.com/naelasproject0817/ab-testing-playlist-recommendation/blob/main/download%20(4).png)
 ---
 
 ## 🔬 Experiment Setup & Hypothesis
@@ -21,6 +27,7 @@ Proyek ini bertujuan untuk menguji efektivitas intervensi kampanye personalisasi
 * **$H_0$ (Hipotesis Nol)**: Tidak ada perbedaan signifikan pada *Duration Played*, *Engagement*, atau *Conversion Rate* antara grup Control dan Target.
 * **$H_1$ (Hipotesis Alternatif)**: Grup Target memiliki *Duration Played*, *Engagement*, dan *Conversion Rate* yang lebih tinggi secara signifikan dibandingkan grup Control.
 
+![Gambar](https://github.com/naelasproject0817/ab-testing-playlist-recommendation/blob/main/download%20(5).png)
 ---
 
 ## 📊 Key Results & Findings
@@ -37,6 +44,7 @@ Setelah fitur dirilis secara bertahap selama 15 hari pasca-eksperimen:
 2. **Minggu Kedua (8–15 Maret)**: Terjadi lonjakan adopsi pengguna hingga **+87.4% dalam sehari**, mencapai puncaknya di **29,803 user/hari** dan stabil di rentang **24,000–26,000 user/hari**.
 3. **Pertumbuhan Total**: Volume pengguna meningkat sebesar **+52.26%** dari titik awal.
 
+![Gambar](https://github.com/naelasproject0817/ab-testing-playlist-recommendation/blob/main/download%20(6).png)
 ---
 
 ## 💡 Recommendations & Action Items
